@@ -9,7 +9,7 @@ import json
 
 
 load_dotenv()
-uri = "mongodb+srv://Bamidele1:1631324de@mycluster.vffurcu.mongodb.net/?retryWrites=true&w=majority"
+uri = ""
 client = MongoClient(uri, server_api=ServerApi('1'))
 db = client['test']
 messages_collection = db['chat']
