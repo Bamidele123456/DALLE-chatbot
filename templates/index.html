@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App with Left Navbar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-item">Understanding Ai</div>
+        <div class="nav-item">Creating Art Prompt</div>
+        <div class="nav-item">Privacy Assurance</div>
+    </div>
+    <div class="chat-container">
+<!--        <div class="chat-header">-->
+<!--            <h2>Chat</h2>-->
+<!--        </div>-->
+        <div class="chat-window" id="chat-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type your message here...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
